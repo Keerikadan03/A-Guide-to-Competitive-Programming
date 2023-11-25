@@ -10,8 +10,17 @@ void cd(int n){
             //this is because the print is given after all the recursions are called while exiting the function calls.
 }
 
+void cu(int n){
+    if(n==0){
+        return;
+    }
+    cu(n-1);        
+    cout<< n<<"\n";
+}
+
 int main(){
     int n = 10;
     cd(n);
+    cu(n);
     return 0;
 }
