@@ -10,6 +10,7 @@ int reverse(int n){
 }
 
 int main(){
-    cout<<reverse(951357);
+    int n = 12345;
+    cout<<reverse(n);
     return 0;
 }
