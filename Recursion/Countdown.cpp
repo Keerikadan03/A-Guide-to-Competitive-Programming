@@ -1,14 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int cd(int n){
-    if(n==1){
-        cout<< n;
-        return 1;
-    }else{
-        cout<< n<<"\n";
-        return cd(n-1);
+void cd(int n){
+    if(n==0){
+        return;
     }
+    cout<< n<<"\n";
+    cd(n-1);
 }
 
 int main(){
