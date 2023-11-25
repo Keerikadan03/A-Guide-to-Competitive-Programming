@@ -3,6 +3,7 @@ using namespace std;
 
 int cd(int n){
     if(n==1){
+        cout<< n;
         return 1;
     }else{
         cout<< n<<"\n";
@@ -12,6 +13,6 @@ int cd(int n){
 
 int main(){
     int n = 10;
-    cout<<cd(n);
+    cd(n);
     return 0;
 }
