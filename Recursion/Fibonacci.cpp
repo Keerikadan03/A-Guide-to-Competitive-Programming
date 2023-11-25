@@ -1,15 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int fibo(int n){
-    if(n<2){
-        return n;
-    }
-    return fibo(n-1) + fibo(n-2);
+int fs(int n){
+	if(n<2){
+		return n;
+	}
+	return fs(n-1) + fs(n-2);
 }
 
 int main(){
-    cout<<fibo(10);
-    return 0;
+	int n = 7;
+	cout<<fs(n);
+	return 0;
 }
-
