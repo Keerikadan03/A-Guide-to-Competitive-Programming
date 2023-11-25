@@ -18,9 +18,19 @@ void cu(int n){
     cout<< n<<"\n";
 }
 
+void both(int n){
+    if(n == 0){
+        return;
+    }
+    cout<<n<<"\n";
+    both(n-1);  //merged both function codes in one
+    cout<<n<<"\n";
+}
+
 int main(){
     int n = 10;
-    cd(n);
-    cu(n);
+    // cd(n);
+    // cu(n);
+    both(n);
     return 0;
 }
